@@ -5,25 +5,36 @@ body{
     box-sizing: border-box;
 }
 
-.navbar{
-    background-color: aqua;
-    display: grid;
-    grid-column: 4fr 1fr;
-    grid-row: 1.2fr;
-
+.header{
+    height: 30px;
 }
 
-.navbar-socialMedia{
+.navbar{
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 1.5fr;
+}
+
+.naveg-socialMedia{
     display: flex;
     flex-direction: row;
 }
 
 
-.main{
-    background-color: aquamarine;
+
+.container-logros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: lightgray;
+    justify-items: center;
+}
+.iconos-logros{
+    height: 300px;
 }
 
-.main{
+
+.section{
     background-color:whitesmoke;
     display: flex;
     flex-direction: column;
@@ -58,5 +69,6 @@ body{
 
 
 div footer{
-    background-color: blueviolet;
+    background-color: rgb(35, 48, 96);
+    height: 300px;
 }
