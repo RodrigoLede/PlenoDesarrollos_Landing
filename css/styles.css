@@ -67,6 +67,11 @@ body{
     width: 550px;
 }
 
+.image{
+    height: 48px;
+    width: 48px;
+}
+
 
 div footer{
     background-color: rgb(35, 48, 96);
