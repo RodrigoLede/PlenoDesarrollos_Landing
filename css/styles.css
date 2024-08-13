@@ -6,19 +6,26 @@ body{
 }
 
 .header{
-    height: 30px;
+    height: 150px;
 }
 
 .navbar{
-    background-color: lightgray;
+    height: 100%;
+    margin-left: 6%;
+    margin-right: 3%;
     display: grid;
     grid-template-columns: 3fr 3fr;
     grid-template-rows: 1.5fr;
 }
 
 .naveg-socialMedia{
+    height: 100%;
+    width: 150px;
     display: flex;
     flex-direction: row;
+    align-items: end;
+    justify-content: space-evenly;
+
 }
 
 
@@ -26,7 +33,7 @@ body{
 .container-logros{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: lightgray;
+    background-color: rgb(231 239 244);
     justify-items: center;
 }
 .iconos-logros{
@@ -34,7 +41,7 @@ body{
 }
 
 
-.section{
+.section_desarrollos{
     background-color:whitesmoke;
     display: flex;
     flex-direction: column;
@@ -49,7 +56,7 @@ body{
     font-size: 40px;
     font-weight: 500;
     letter-spacing: -1px;
-    margin-top: 10%;
+    margin-top: 5%;
     text-align: center;
 }
 
@@ -70,6 +77,47 @@ body{
 .image{
     height: 48px;
     width: 48px;
+}
+
+.section_nuesVirt{
+    height: 600px;
+    margin-top: 150px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    flex-grow: inherit;
+    column-gap: 5px;
+    }
+
+.nuestras_virtudes{
+    background-color: #37549c;
+    width: 50%;
+    h3{
+        color: azure;
+        font-size: 45px;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+    p{
+        color: white;
+        text-align: justify;
+        font-size: x-large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.nuestra_portada{
+    width: 50%;
+    background-color: rgb(67, 80, 126);
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    
 }
 
 
