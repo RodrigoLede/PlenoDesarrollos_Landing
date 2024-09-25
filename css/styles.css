@@ -7,9 +7,17 @@ body{
 
 @font-face{
     font-family: 'Univers';
-    src: url(/fonts/UniversLTStd-BoldCn.otf);
-    font-weight: bold;
-    font-style: bold;
+    src: url(/fonts/UniversLTStd-LightCn.otf);
+}
+
+.title{
+    font-family: 'Univers';
+    font-size: 4rem;
+}
+h2{
+    font-family:'Univers';
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 h3{
@@ -19,8 +27,33 @@ h4{
     font-family:'Univers';
 }
 
+.wrap{
+    padding: 0px 100px 100px 100px;
+    width: 100vw;
+    height: 350vh;
+    display: flex;
+    justify-content: center;
+    background:  url(/img/minisitio/05.EXTERIOR-1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.wrap-text{
+    color: black;
+    height: 700px;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
 .header{
-    height: 120px;
+    height: 70px;
 }
 
 .navbar{
@@ -35,8 +68,41 @@ h4{
     width: 150px;
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: center;
     justify-content: space-evenly;
+
+}
+
+.section{
+    
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 25px 28px;
+    background-color: #f2f1ed;
+    height: 600px;
+    margin-bottom: 25px;
+}
+
+.firstDescription{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    padding: 25px 100px;
+}
+
+p{
+    text-align:justify;
+    font-family:'Univers';
+    font-size: x-large;
+    line-height: 3.5ch;
+}
+
+.imgContainer{
+    margin: 15px;
+    height: 550px;
+}
+.hallEntrada{
+    width: 90%;
+    height: 90%;
 
 }
 
@@ -115,10 +181,11 @@ h4{
         color: white;
         text-align: justify;
         font-size: x-large;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Univers';
         display: flex;
         margin-left: 20px;
         margin-right: 20px;
+        writing-mode: vertical-lr;
     }
 }
 
