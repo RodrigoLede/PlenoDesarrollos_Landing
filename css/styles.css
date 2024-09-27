@@ -27,6 +27,12 @@ h4{
     font-family:'Univers';
 }
 
+li{
+    font-size: larger;
+    list-style: none;
+    line-height: 35px;
+}
+
 .wrap{
     padding: 0px 100px 100px 100px;
     width: 100vw;
@@ -76,17 +82,17 @@ h4{
 .section{
     
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     padding: 25px 28px;
     background-color: #f2f1ed;
-    height: 600px;
+    height: 500px;
     margin-bottom: 25px;
 }
 
 .firstDescription{
     display: grid;
     grid-template-rows: 1fr 3fr;
-    padding: 25px 100px;
+    padding: 20px 60px;
 }
 
 p{
@@ -97,12 +103,11 @@ p{
 }
 
 .imgContainer{
-    margin: 15px;
-    height: 550px;
+    height: 490px;
 }
 .hallEntrada{
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
 
 }
 
@@ -233,9 +238,8 @@ p{
 }
 
 
-
 .formulario{
-    margin-top: 6%;
+    margin-top: 60px;
     display: flex;
     gap: 20px;
 
