@@ -12,11 +12,37 @@
 <body>
 
     <div class="header">
-        <div class="navbar" style="background-color: rgb(231 239 244);">
+        <div class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: rgb(231 239 244); height: 150px;">
             <div class="naveg-brand">
                 <a class="navbar-item" href="/">
                     <img src="./img/LogoPLeno.png" alt="LogoPLeno" width="450">
                 </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"> PLENO </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> PREVENTA </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          DESARROLLO
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something more </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true"> CONTACTO </a>
+                    </li>
+                </ul>
             </div>
             
             <div class="naveg-socialMedia">
@@ -40,27 +66,16 @@
     </div>
 
     <div class="main">
-                    <div id="carouselExample" class="carousel slide">
-                        <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="img/carrusel/Captura de Pantalla 2024-05-30 a la(s) 20.12.06.png" class="d-block w-100" alt="bn1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="icarrusel/Captura de Pantalla 2024-05-30 a la(s) 20.12.15.png" class="d-block w-100" alt="bnn2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/carruselCaptura de Pantalla 2024-05-30 a la(s) 20.12.23.png" class="d-block w-100" alt="bnn3">
-                        </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+        <div class="wrap_mainpage">
+            <div class="wrap-text">
+                <div>
+                    
+                </div>
+                <h1 class="title">
+                   
+                </h1>
+            </div>
+        </div>   
     </div>
 
     <div class="container-logros">
@@ -90,66 +105,12 @@
         </div>
     </div>
     
-    <div class="section_desarrollos">
-            <p class="proyectsContainer_title">PREVENTA</p>
-            <div class="card_container">
-                <div class="card">
-                    <div>
-                        <figure class="image_card">
-                            <img class="image_card" src="./img/Edif_Azcuenaga.png" alt="Imagen del Proyecto">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
-                                <figure class="image-logo">
-                                    <img src="./img/-Logo DUO.png" class="image" alt="Placeholder image">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div>
-                        <figure class="image_card">
-                            <img class="image_card" src="./img/Edif_BalconesPaso.png" alt="Imagen del Proyecto">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
-                                <figure class="image-logo">
-                                <img src="./img/-Logo DON MORENO.png" class="image" alt="Placeholder image">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div>
-                        <figure class="image_card">
-                            <img  class="image_card" src="./img/Edif_EspacioMitre.png" alt="Imagen del Proyecto">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-right">
-                                <figure class="image">
-                                    <img src="./img/-Logo ESQUINA VISTALBA.png" class="image" alt="Placeholder image">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </div>
-    
     <div class="section_nuesVirt">
         <div class="nuestras_virtudes">
             <h3>
                 PLENO
             </h3>
-            <p>
+            <p class="p-Virtudes">
                 Dedicados al desarrollo inmobiliario combinando diseño de vanguardia con funcionalidad, respaldados por 15 años de trayectoria. Especializados en la creacion de edificios, departamentos, espacios comerciales, oficinas, destacándonos por una estética única y terminaciones de alta calidad. 
                 
                 Nuestra visión es transformar el paisaje urbano ofreciendo un servicio integral que incluye diseño, dirección y gerenciamiento de proyectos, garantizando soluciones eficientes y excepcionales.
@@ -163,10 +124,244 @@
         </div>
 
     </div>
-    
+
+    <div class="prev">
+        <div><img class="imgPrev" src="./img/ImgPreventa/botón-05.png" alt=""></div>
+        <div><img class="imgPrev" src="./img/ImgPreventa/botón-06.png" alt=""></div>
+        <div><img class="imgPrev" src="./img/ImgPreventa/botón-07.png" alt=""></div>
+    </div>
+
+    <!-- Formulario 
+    <div class="section_preventa">
+        <p class="proyectsContainer_title">PREVENTA</p>
+        <div class="card_container">
+            <div class="card">
+                <div>
+                    <figure class="image_card">
+                        <img class="image_card" src="./img/Edif_Azcuenaga.png" alt="Imagen del Proyecto">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image-logo">
+                                <img src="./img/-Logo DUO.png" class="image" alt="Placeholder image">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <figure class="image_card">
+                        <img class="image_card" src="./img/Edif_BalconesPaso.png" alt="Imagen del Proyecto">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image-logo">
+                            <img src="./img/-Logo DON MORENO.png" class="image" alt="Placeholder image">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <figure class="image_card">
+                        <img  class="image_card" src="./img/Edif_EspacioMitre.png" alt="Imagen del Proyecto">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-right">
+                            <figure class="image">
+                                <img src="./img/-Logo ESQUINA VISTALBA.png" class="image" alt="Placeholder image">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <div class="section_desarrollos">
+        <div style="text-align: left; margin: 25px 28px;">
+            <h1 style="color: #37549c; font-weight: bolder;"> DESARROLLOS </h1>     
+        </div>
+        <div class="desarrollos_grilla">
+            <div>
+                <div class="card">
+                    <div class="card-title">
+                    <p class="card-text">Don Beltran</p>
+                    </div>
+                    <img src="./img/Grillas/Render Don Beltran.png" class="card-img-top" style="border-radius: 5%;" alt="...">
+                </div>
+            </div>
+
+            <div>
+                <div class="card">
+                    <div class="card-title">
+                    <p class="card-text">Paso y Godoy II</p>
+                    </div>
+                    <img src="./img/Grillas/PASO Y GODOY 2.jpg" class="card-img-top" alt="...">
+                </div>
+            </div>
+
+            <div>
+                <div class="card">
+                    <div class="card-title">
+                    <p class="card-text">Paso y Godoy I</p>
+                    </div>
+                    <img src="./img/Grillas/PASO Y GODOY 1.png" class="card-img-top" alt="...">
+                </div>
+            </div>
+
+            <div>
+                <div class="card">
+                    <div class="card-title">
+                    <p class="card-text">Aires de la Quinta</p>
+                    </div>
+                    <img src="./img/Grillas/Aires de la Quinta_1.jpg" class="card-img-top" alt="...">
+                </div>
+            </div>
+
+            <div>
+                <div class="card">
+                    <div class="card-title">
+                    <p class="card-text">Edison 1.</p>
+                    </div>
+                    <img src="./img/Grillas/Edison_1.jpg" class="card-img-top" alt="...">
+                </div>
+            </div>
+
+
+            <div>
+                <div class="card">
+                    <div class="card-title">
+                    <p class="card-text">Pleno Español</p>
+                    </div>
+                    <img src="./img/Grillas/18-Pleno Bombal.png" class="card-img-top" alt="...">
+                </div>
+            </div>
+
+            <div>
+                <div class="card">
+                    <div class="card-title">
+                    <p class="card-text">Balcones de Colon</p>
+                    </div>
+                    <img src="./img/Grillas/Balcones_Colon1-700x450.jpg" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div>
+                <div class="card" >
+                    <div class="card-title">
+                    <p class="card-text">Balcones de los Andes</p>
+                    </div>
+                    <img src="./img/Grillas/Balcones de los Andes.png" class="card-img-top" alt="...">
+                </div>
+            </div>
+
+            <div>
+                <div class="card">
+                    <div class="card-title">
+                    <p class="card-text">Dorrego Plaza</p>
+                    </div>
+                    <img src="./img/Grillas/DORREGO PLAZA.png" class="card-img-top" alt="...">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="break" style="display: flex; justify-content: center; align-items: center;">
+
+        <img src="./img/Breaks/-BREAK 1.png" width="250px" alt="divisor de pantalla">
+
+    </div>
+
+    <!-- Formulario -->
+    <div style="text-align: center; margin: 2px 28px; margin-bottom:50px;">
+        <h1>CONTACTO</h1>
+    </div>
+
+    <div class="formulario">
+        <div>
+            <img src="../img/tarjeta_Contactenos.JPG" width="500" alt="">
+        </div>
+        <form class="formu">
+            <fieldset class="field">
+                <legend id="formularioAsistencia"> </legend>
+
+                <div class="row mb-3">
+                    <label for="inputNombre" class="col-sm-2 col-form-label">NOMBRE Y APELLIDO</label>
+                    <div class="col-sm-10">
+                        <input type="nombre" class="form-control foco" id="inputNombre">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="email" class="col-sm-2 col-form-label">EMAIL
+                    </label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control foco"  id="email">
+                    </div>
+                </div>
+               
+                <div class="row mb-3">
+                    <label for="inputAsunto" class="col-sm-2 col-form-label">TELEFONO</label>
+                    <div class="col-sm-10">
+                    <input type="password" class="form-control foco" id="inputAsunto">
+                    </div>
+                </div>
+                
+                <div class="row mb-3">
+                    <label for="FormComentario" class="form-label">MENSAJE</label>
+                    <textarea class="form-control foco detalles" id="FormComentario" rows="3" placeholder="Escribí los detalles"></textarea>
+                </div>
+            </fieldset>    
+            <fieldset class="row mb-3">
+                <!--<div class="check">
+                    <div>
+                        <legend class="leyenda text-wrap">¿Desea recibir el Newsletter?
+                        </legend>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                            Si, quiero recibirlo.
+                        </label>
+                    </div>
+                </div> -->   
+                <div class=" botones col-12 d-flex">
+                    <button type="submit" class="btn btn-dark boto Enviar">Enviar</button>
+                    <button type="reset" class="btn btn-dark boto Borrar">Borrar</button>
+                </div>  
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- Botón Whatsapp -->
+    <div class="whatsapp">
+        <div class="cajita" style="height: 56px;" >
+            Contactar por WhatsApp
+        </div>
+        <a href="https://api.whatsapp.com/send?phone=549261664613" target="_blank">
+            <img class="whatsapp_ic" src="../img/icons8-whatsapp-64.png" alt="whatsapp" width="56px" height="56px">
+        </a>
+    </div>
+
+    <!-- Pie de Página -->
     <div>
-        <footer>
-                pie
+        <footer class="pie">
+            <h3>
+                PLENO DESARROLLOS
+            </h3>
+            <h4 style="font-size: small;">
+                © 2024 PLENO DESARROLLOS. All Rights Reserved.
+            </h4>
+               
         </footer>
     </div>
 

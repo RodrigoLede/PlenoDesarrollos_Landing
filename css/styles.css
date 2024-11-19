@@ -14,6 +14,9 @@ body{
     font-family: 'Univers';
     font-size: 4rem;
 }
+h1{
+    font-family:'Univers';
+}
 h2{
     font-family:'Univers';
     margin-top: 15px;
@@ -28,18 +31,23 @@ h4{
 }
 
 li{
+    font-family: 'Univers';
     font-size: larger;
     list-style: none;
     line-height: 35px;
 }
 
+p{
+    font-family:'Univers';
+}
+
 .wrap{
     padding: 0px 100px 100px 100px;
     width: 100vw;
-    height: 350vh;
+    height: 130vh;
     display: flex;
     justify-content: center;
-    background:  url(/img/minisitio/05.EXTERIOR-1.jpg);
+    background:  url(/img/minisitio/IMAGEN\ PORTADA\ DUO-02.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -56,6 +64,17 @@ li{
 
 }
 
+.wrap_mainpage{
+    padding: 0px 100px 100px 100px;
+    width: 100vw;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    background:  url(/img/ejemplo\ carrusel\ reunión-04.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
 
 
 .header{
@@ -65,7 +84,7 @@ li{
 .navbar{
     height: 100%;
     display: grid;
-    grid-template-columns: 3fr 3fr;
+    grid-template-columns: 3fr 5fr 3fr;
     grid-template-rows: 1.5fr;
 }
 
@@ -80,7 +99,6 @@ li{
 }
 
 .section{
-    
     display:grid;
     grid-template-columns: 1fr 1.5fr;
     padding: 25px 28px;
@@ -114,6 +132,7 @@ p{
 
 
 .container-logros{
+    width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: rgb(231 239 244);
@@ -124,47 +143,54 @@ p{
 }
 
 
-.section_desarrollos{
+.section_preventa{
     background-color:whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 800px;
+    width:100vw;
+    height: 100vh;
     margin-bottom: 0;
-    padding: 0 50px;
+    padding: 0 25px;
 }
 
 .proyectsContainer_title{
     font-size: 40px;
-    font-weight: 500;
-    letter-spacing: -1px;
+    font-family:'Univers';
+    font-weight: bold;
     margin-top: 5%;
-    text-align: center;
+    align-self: self-start;
+    
 }
 
 .card_container{
     display: flex;
     gap: 25px;
+    ;
 }
-.card{
-    border-radius: 30px;
+
+.card-content{
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: bottom center;
 }
 
 .image_card{
-    border-radius: 30px;
-    height: 550px;
-    width: 550px;
+    border-radius: 40px;
+    height: 350px;
+    width: 400px;
 }
 
 .image{
-    height: 48px;
-    width: 48px;
+    height: 88px;
+    width: 128px;
 }
 
 .section_nuesVirt{
     height: 600px;
-    margin-top: 150px;
+    margin-top: 80px;
     background-color: aliceblue;
     display: flex;
     flex-direction: row;
@@ -182,7 +208,7 @@ p{
         margin-left: 20px;
         margin-bottom: 30px;
     }
-    p{
+    .p-Virtudes{
         color: white;
         text-align: justify;
         font-size: x-large;
@@ -190,7 +216,6 @@ p{
         display: flex;
         margin-left: 20px;
         margin-right: 20px;
-        writing-mode: vertical-lr;
     }
 }
 
@@ -209,6 +234,8 @@ p{
     position: fixed;
     bottom: 30px;
     right: 30px; 
+    border-radius: 35px;
+    background-color: rgba(10, 204, 10, 1);
 }
 
 .cajita{
@@ -218,12 +245,13 @@ p{
     font-family: sans-serif;
     text-align: center;
     white-space: nowrap;
-    border-radius: 0px;
+    border-radius: 5px;
     padding: 0px 15px 0px 15px;
     background-color: rgba(10, 204, 10, 1);
 }
 .whatsapp_ic{
     background-color: rgba(10, 204, 10, 1);
+    border-radius: 5px;
 }
 
 
@@ -239,8 +267,58 @@ p{
 
 
 .formulario{
-    margin-top: 60px;
+    width: 100vw;
     display: flex;
+    justify-items: center;
+    align-items: center;
     gap: 20px;
+    font-family: 'Univers';
 
+}
+
+.formu{
+    width: 850px;
+}
+
+.desarrollos_grilla{
+    height: 180vh;
+    width: 100vw;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.card{
+    background: cover;
+    width: fit-content;
+}
+
+.card-title{
+    background-color:rgb(35, 48, 96);
+}
+.card-text{
+    color: azure;
+}
+
+
+.prev{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    height: 300px;
+    width: 100vw;
+    margin-top: 10%;
+    margin-bottom:10%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imgPrev{
+    width: 95%;
+    
+    
 }
