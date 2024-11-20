@@ -5,6 +5,8 @@ body{
     box-sizing: border-box;
 }
 
+/* FUENTES Y TEXTOS*/
+
 @font-face{
     font-family: 'Univers';
     src: url(/fonts/UniversLTStd-LightCn.otf);
@@ -14,9 +16,11 @@ body{
     font-family: 'Univers';
     font-size: 4rem;
 }
+
 h1{
     font-family:'Univers';
 }
+
 h2{
     font-family:'Univers';
     margin-top: 15px;
@@ -26,20 +30,21 @@ h2{
 h3{
     font-family:'Univers';
 }
+
 h4{
     font-family:'Univers';
 }
 
-li{
-    font-family: 'Univers';
-    font-size: larger;
-    list-style: none;
-    line-height: 35px;
-}
-
 p{
     font-family:'Univers';
+    text-align:justify;
+    font-size: x-large;
+    line-height: 3.5ch;
 }
+
+/* FU*/
+
+
 
 .wrap{
     padding: 0px 100px 100px 100px;
@@ -75,10 +80,17 @@ p{
     background-position: center center;
 }
 
-
+/* HEADER*/
 
 .header{
     height: 70px;
+}
+
+li{
+    font-family: 'Univers';
+    font-size: larger;
+    list-style: none;
+    line-height: 35px;
 }
 
 .navbar{
@@ -95,8 +107,9 @@ p{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-
 }
+
+/* CONTENIDO PRINCIPAL*/
 
 .section{
     display:grid;
@@ -113,12 +126,6 @@ p{
     padding: 20px 60px;
 }
 
-p{
-    text-align:justify;
-    font-family:'Univers';
-    font-size: x-large;
-    line-height: 3.5ch;
-}
 
 .imgContainer{
     height: 490px;
@@ -138,10 +145,12 @@ p{
     background-color: rgb(231 239 244);
     justify-items: center;
 }
+
 .iconos-logros{
     height: 300px;
 }
 
+/* PREVENTA*/
 
 .section_preventa{
     background-color:whitesmoke;
@@ -153,6 +162,23 @@ p{
     height: 100vh;
     margin-bottom: 0;
     padding: 0 25px;
+}
+
+.prev{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    height: 300px;
+    width: 100vw;
+    margin-top: 10%;
+    margin-bottom:10%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imgPrev{
+    width: 95%;
 }
 
 .proyectsContainer_title{
@@ -228,6 +254,7 @@ p{
     }
     
 }
+ /* WHATSAPP BOTON*/
 
 .whatsapp {
     display: flex;
@@ -236,13 +263,14 @@ p{
     right: 30px; 
     border-radius: 35px;
     background-color: rgba(10, 204, 10, 1);
+    
 }
 
 .cajita{
     align-content: center;
     color: #fff;
-    font-size: 12px;
-    font-family: sans-serif;
+    font-size: 15px;
+    font-family: 'Univers';
     text-align: center;
     white-space: nowrap;
     border-radius: 5px;
@@ -253,6 +281,8 @@ p{
     background-color: rgba(10, 204, 10, 1);
     border-radius: 5px;
 }
+
+/* FOOTER*/
 
 
 .pie{
@@ -265,6 +295,7 @@ p{
     height: 250px;
 }
 
+/* FORMULARIO*/
 
 .formulario{
     width: 100vw;
@@ -291,6 +322,8 @@ p{
     gap: 15px;
 }
 
+/*TARJETAS*/
+
 .card{
     background: cover;
     width: fit-content;
@@ -304,21 +337,3 @@ p{
 }
 
 
-.prev{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 10px;
-    height: 300px;
-    width: 100vw;
-    margin-top: 10%;
-    margin-bottom:10%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.imgPrev{
-    width: 95%;
-    
-    
-}
