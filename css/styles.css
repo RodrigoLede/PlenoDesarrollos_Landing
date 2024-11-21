@@ -132,6 +132,12 @@ p{
 .formu{
     width: 100%;
     padding-left: 2%;
+    font-family: 'Univers';
+}
+.btn{
+    width: 120px;
+    margin: 1%;
+    font-family: 'Univers';
 }
 
 
@@ -142,6 +148,14 @@ p{
 
 /* HEADER*/
 
+
+.navbar{
+    height: 120px;
+    display: grid;
+    grid-template-columns: 3fr 5fr 3fr;
+    grid-template-rows: 1.5fr;
+}
+
 li{
     font-family: 'Univers';
     font-size: larger;
@@ -149,13 +163,6 @@ li{
     line-height: 35px;
 }
 
-.navbar{
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 3fr 5fr 3fr;
-    grid-template-rows: 1.5fr;
-}
 
 .naveg-socialMedia{
     height: 100%;
@@ -173,23 +180,25 @@ li{
     padding-bottom: 0px;
 }
 .imgCarousel{
-    padding: 0px 100px 100px 100px;
-    width: 100vw;
-    height: 130vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     background-size: cover;
     background-position: center center;
 }
 
+/* CONTENIDO LOGROS*/
+
 .container-logros{
-    width: 100%;
-    height: 250px;
+    height: 230px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: rgb(231 239 244);
     justify-items: center;
-    margin: 0px;
+    margin: 30px 20px;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
 .logrosBox{
@@ -207,7 +216,7 @@ li{
 
 .section_nuesVirt{
     height: 400px;
-    margin-top: 20px;
+    margin: 30px 20px;
     background-color: aliceblue;
     display: flex;
     flex-direction: row;
@@ -267,7 +276,6 @@ li{
     grid-template-rows: 1fr;
     gap: 10px;
     height: 250px;
-    width: 100%;
     padding-left: 4%;
     align-items: center;
     justify-content: space-between;
