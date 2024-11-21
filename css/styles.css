@@ -1,10 +1,11 @@
 
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 
+}
 
 /* COMUNES A TODO */
 
@@ -43,6 +44,7 @@ p{
     text-align:justify;
     font-size: x-large;
     line-height: 3.5ch;
+    margin: 0px;
 }
 
 /* WHATSAPP BOTON*/
@@ -87,22 +89,37 @@ p{
 
 /* FORMULARIO*/
 
-.textForm{
+
+.formulario{
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Univers';
+}
+
+.textForm{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     background-color:rgb(35, 48, 96);
     height: 400px;
-    width: 550px;
     margin-bottom: 5px;
+    padding-top: 5%;
+    padding-bottom: 8%;
     
 }
 .iconForm{
     padding: 0%;
     width: 450px;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+.iconForm img{
+    justify-self: center;
 }
 .logForm{
     font-family: 'Univers';
@@ -112,40 +129,18 @@ p{
     
 }
 
-.formulario{
-    width: 100vw;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    gap: 20px;
-    font-family: 'Univers';
-
-}
-
 .formu{
-    width: 850px;
+    width: 100%;
+    padding-left: 2%;
 }
 
-.desarrollos_grilla{
-    height: 180vh;
-    width: 100vw;
-    padding-left: 5%;
-    padding-right: 5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 15px;
-}
+
 
 /*----------------------------------------------------------------*/
 
 /* EXCLUSIVOS PAGINA PRINCIPAL*/
 
 /* HEADER*/
-
-.header{
-    height: 70px;
-}
 
 li{
     font-family: 'Univers';
@@ -156,6 +151,7 @@ li{
 
 .navbar{
     height: 100%;
+    width: 100%;
     display: grid;
     grid-template-columns: 3fr 5fr 3fr;
     grid-template-rows: 1.5fr;
@@ -173,126 +169,45 @@ li{
 /* CONTENIDO PRINCIPAL*/
 
 .carousel{
-    margin-top: 6%;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
-.wrap_mainpage{
+.imgCarousel{
     padding: 0px 100px 100px 100px;
     width: 100vw;
     height: 130vh;
     display: flex;
     justify-content: center;
-    background:  url(/img/ejemplo\ carrusel\ reunión-04.jpg);
     background-size: cover;
     background-position: center center;
 }
 
-
-.section{
-    display:grid;
-    grid-template-columns: 1fr 1.5fr;
-    padding: 25px 28px;
-    background-color: #f2f1ed;
-    height: 500px;
-    margin-bottom: 25px;
-}
-
-.firstDescription{
-    display: grid;
-    grid-template-rows: 1fr 3fr;
-    padding: 20px 60px;
-}
-
-
-.imgContainer{
-    height: 490px;
-}
-.hallEntrada{
-    width: 100%;
-    height: 100%;
-
-}
-
-
-
 .container-logros{
-    width: 100vw;
+    width: 100%;
+    height: 250px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: rgb(231 239 244);
     justify-items: center;
+    margin: 0px;
+}
+
+.logrosBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .iconos-logros{
-    height: 300px;
+    height: 160px;
 }
 
-/* PREVENTA*/
-
-.section_preventa{
-    background-color:whitesmoke;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width:100vw;
-    height: 100vh;
-    margin-bottom: 0;
-    padding: 0 25px;
-}
-
-.prev{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 10px;
-    height: 300px;
-    width: 100vw;
-    margin-top: 10%;
-    margin-bottom:10%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.imgPrev{
-    width: 95%;
-}
-
-.proyectsContainer_title{
-    font-size: 40px;
-    font-family:'Univers';
-    font-weight: bold;
-    margin-top: 5%;
-    align-self: self-start;
-    
-}
-
-.card_container{
-    display: flex;
-    gap: 25px;
-    ;
-}
-
-.card-content{
-    display: flex;
-    justify-content: center;
-    background-size: cover;
-    background-position: bottom center;
-}
-
-.image_card{
-    border-radius: 40px;
-    height: 350px;
-    width: 400px;
-}
-
-.image{
-    height: 88px;
-    width: 128px;
-}
+/* NOSOTROS*/
 
 .section_nuesVirt{
-    height: 600px;
-    margin-top: 80px;
+    height: 400px;
+    margin-top: 20px;
     background-color: aliceblue;
     display: flex;
     flex-direction: row;
@@ -302,7 +217,9 @@ li{
 
 .nuestras_virtudes{
     background-color: #37549c;
-    width: 50%;
+    width: 60%;
+    padding-right: 6%;
+    padding-left: 4%;
     h3{
         color: azure;
         font-size: 45px;
@@ -313,8 +230,9 @@ li{
     .p-Virtudes{
         color: white;
         text-align: justify;
-        font-size: x-large;
+        font-size: large;
         font-family: 'Univers';
+        line-height: 2em;
         display: flex;
         margin-left: 20px;
         margin-right: 20px;
@@ -322,7 +240,7 @@ li{
 }
 
 .nuestra_portada{
-    width: 50%;
+    width: 40%;
     background-color: rgb(67, 80, 126);
     img{
         height: 100%;
@@ -330,9 +248,41 @@ li{
     }
     
 }
- 
-/*TARJETAS*/
 
+/* PREVENTA*/
+
+.proyectsContainer_title{
+    font-size: 40px;
+    font-family:'Univers';
+    font-weight: bold;
+    margin-top: 2%;
+    margin-left: 20px;
+    padding-left: 4%;
+    align-self: self-start;
+    color:rgb(67, 80, 126);
+}
+.section_prev{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    height: 250px;
+    width: 100%;
+    padding-left: 4%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.imgPrev{
+    width: 95%;
+}
+ 
+/*DESARROLLOS*/
+
+.section_desarrollos{
+    margin: 30px 20px;
+}
 .card{
     background: cover;
     width: fit-content;
@@ -343,6 +293,17 @@ li{
 }
 .card-text{
     color: azure;
+}
+
+.desarrollos_grilla{
+    height: 100%;
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
 }
 
 /*------------------------------------------------------------*/
@@ -370,6 +331,30 @@ li{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.section{
+    display:grid;
+    grid-template-columns: 1fr 1.5fr;
+    padding: 25px 28px;
+    background-color: #f2f1ed;
+    height: 500px;
+    margin-bottom: 25px;
+}
+
+.firstDescription{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    padding: 20px 60px;
+}
+
+
+.imgContainer{
+    height: 490px;
+}
+.hallEntrada{
+    width: 100%;
+    height: 100%;
 }
 
 .maps{

@@ -246,35 +246,63 @@
         <h1>CONTACTO</h1>
     </div>
 
+     <!-- Formulario -->
+     <div id="Contactos" style="text-align: center; margin: 2px 28px; margin-bottom:50px;">
+        <h1>CONTACTO</h1>
+    </div>
+
     <div class="formulario">
-        <div>
-            <img src="../img/tarjeta_Contactenos.JPG" width="500" alt="">
+        <div class="textForm">
+                <div class="iconForm">
+                    <img src="../img/Iconos/icons8-correo-50.png" width="40px" height="45px" alt="">
+                    <a class="logForm" href="">
+                        comercial@plenodesarrollos.com
+                    </a>
+                </div>
+                <div class="iconForm">
+                    <img src="../img/Iconos/icons8-whatsapp-50.png" alt="">
+                    <a class="logForm" href="">
+                         +54 9 261 6 684613
+                    </a>
+                </div>
+                <div class="iconForm">
+                    <img src="../img/Iconos/icons8-instagram-50.png"  width="60px" height="60px" alt="">
+                    <a class="logForm" href="">
+                        plenodesarrollos
+                    </a>
+                </div>
+                <div class="iconForm">
+                    <img src="../img/Iconos/icons8-facebook-50.png" alt="">
+                    <a class="logForm" href="">
+                        plenodesarrollos
+                    </a>
+                </div>            
         </div>
-        <form class="formCont">
+        <form class="formu">
             <fieldset class="field">
-                <legend id="formularioAsistencia"> </legend>
                 <div class="row mb-3">
-                    <label for="email" class="col-sm-2 col-form-label">Email
+                    <label for="inputNombre" class="col-sm-2 col-form-label">NOMBRE Y APELLIDO</label>
+                    <div class="col-sm-10">
+                        <input type="nombre" class="form-control foco" id="inputNombre">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="email" class="col-sm-2 col-form-label">EMAIL
                     </label>
                     <div class="col-sm-10">
                         <input type="email" class="form-control foco"  id="email">
                     </div>
                 </div>
+               
                 <div class="row mb-3">
-                    <label for="inputNombre" class="col-sm-2 col-form-label">Nombre/Apellido</label>
+                    <label for="inputAsunto" class="col-sm-2 col-form-label">TELEFONO</label>
                     <div class="col-sm-10">
-                        <input type="nombre" placeholder="Nombre y Apellido" class="form-control foco" id="inputNombre">
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <label for="inputAsunto" class="col-sm-2 col-form-label">Asunto</label>
-                    <div class="col-sm-10">
-                    <input type="password" class="form-control foco" placeholder="Asunto" id="inputAsunto">
+                    <input type="password" class="form-control foco" id="inputAsunto">
                     </div>
                 </div>
                 
                 <div class="row mb-3">
-                    <label for="FormComentario" class="form-label">Dejanos un Comentario</label>
+                    <label for="FormComentario" class="form-label">MENSAJE</label>
                     <textarea class="form-control foco detalles" id="FormComentario" rows="3" placeholder="Escribí los detalles"></textarea>
                 </div>
             </fieldset>    
