@@ -5,6 +5,9 @@ body{
     box-sizing: border-box;
 }
 
+
+/* COMUNES A TODO */
+
 /* FUENTES Y TEXTOS*/
 
 @font-face{
@@ -42,43 +45,101 @@ p{
     line-height: 3.5ch;
 }
 
-/* FU*/
+/* WHATSAPP BOTON*/
 
-
-
-.wrap{
-    padding: 0px 100px 100px 100px;
-    width: 100vw;
-    height: 130vh;
+.whatsapp {
     display: flex;
-    justify-content: center;
-    background:  url(/img/minisitio/IMAGEN\ PORTADA\ DUO-02.jpg);
-    background-size: cover;
-    background-position: center center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px; 
+    border-radius: 35px;
+    background-color: rgba(10, 204, 10, 1);
+    
 }
 
-.wrap-text{
-    color: black;
-    height: 700px;
-    width: 50%;
+.cajita{
+    align-content: center;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Univers';
     text-align: center;
+    white-space: nowrap;
+    border-radius: 5px;
+    padding: 0px 15px 0px 15px;
+    background-color: rgba(10, 204, 10, 1);
+}
+.whatsapp_ic{
+    background-color: rgba(10, 204, 10, 1);
+    border-radius: 5px;
+}
+
+/* FOOTER*/
+
+.pie{
+    color: azure;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.wrap_mainpage{
-    padding: 0px 100px 100px 100px;
-    width: 100vw;
-    height: 130vh;
-    display: flex;
     justify-content: center;
-    background:  url(/img/ejemplo\ carrusel\ reunión-04.jpg);
-    background-size: cover;
-    background-position: center center;
+    align-items: center;
+    background-color: rgb(35, 48, 96);
+    height: 250px;
 }
+
+/* FORMULARIO*/
+
+.textForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color:rgb(35, 48, 96);
+    height: 400px;
+    width: 550px;
+    margin-bottom: 5px;
+    
+}
+.iconForm{
+    padding: 0%;
+    width: 450px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logForm{
+    font-family: 'Univers';
+    font-size: x-large;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.formulario{
+    width: 100vw;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Univers';
+
+}
+
+.formu{
+    width: 850px;
+}
+
+.desarrollos_grilla{
+    height: 180vh;
+    width: 100vw;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+/*----------------------------------------------------------------*/
+
+/* EXCLUSIVOS PAGINA PRINCIPAL*/
 
 /* HEADER*/
 
@@ -110,6 +171,21 @@ li{
 }
 
 /* CONTENIDO PRINCIPAL*/
+
+.carousel{
+    margin-top: 6%;
+}
+.wrap_mainpage{
+    padding: 0px 100px 100px 100px;
+    width: 100vw;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    background:  url(/img/ejemplo\ carrusel\ reunión-04.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
 
 .section{
     display:grid;
@@ -254,74 +330,7 @@ li{
     }
     
 }
- /* WHATSAPP BOTON*/
-
-.whatsapp {
-    display: flex;
-    position: fixed;
-    bottom: 30px;
-    right: 30px; 
-    border-radius: 35px;
-    background-color: rgba(10, 204, 10, 1);
-    
-}
-
-.cajita{
-    align-content: center;
-    color: #fff;
-    font-size: 15px;
-    font-family: 'Univers';
-    text-align: center;
-    white-space: nowrap;
-    border-radius: 5px;
-    padding: 0px 15px 0px 15px;
-    background-color: rgba(10, 204, 10, 1);
-}
-.whatsapp_ic{
-    background-color: rgba(10, 204, 10, 1);
-    border-radius: 5px;
-}
-
-/* FOOTER*/
-
-
-.pie{
-    color: azure;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(35, 48, 96);
-    height: 250px;
-}
-
-/* FORMULARIO*/
-
-.formulario{
-    width: 100vw;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    gap: 20px;
-    font-family: 'Univers';
-
-}
-
-.formu{
-    width: 850px;
-}
-
-.desarrollos_grilla{
-    height: 180vh;
-    width: 100vw;
-    padding-left: 5%;
-    padding-right: 5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 15px;
-}
-
+ 
 /*TARJETAS*/
 
 .card{
@@ -336,4 +345,44 @@ li{
     color: azure;
 }
 
+/*------------------------------------------------------------*/
 
+
+/* EXCLUSIVOS MICRO SITIO*/
+
+.wrap{
+    padding: 0px 100px 100px 100px;
+    width: 100vw;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    background:  url(/img/minisitio/IMAGEN\ PORTADA\ DUO-02.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.wrap-text{
+    color: black;
+    height: 700px;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.maps{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.carousel-item img{
+    object-fit: scale-down;
+    object-position: center;
+    height: 80vh;
+    overflow: hidden;
+}
+
+/*----------------------------------------------------*/
