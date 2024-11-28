@@ -13,15 +13,15 @@
 
     <!-- BARRA DE NAVEGACIÓN -->
     <div class="header">
-        <div class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: rgb(231 239 244);">
-            <div class="naveg-brand">
+        <div class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: rgb(231 239 244);">
+            <div class="naveg-brand" style="width: 350px; padding-left: 2%;">
                 <a class="navbar-item" href="/">
-                    <img src="./img/LogoPLeno.png" alt="LogoPLeno" width="400">
+                    <img src="./img/LogoPLeno.png" alt="LogoPLeno" height="80" width="250">
                 </a>
             </div>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav  mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#Nosotros"> PLENO </a>
                     </li>
@@ -48,11 +48,11 @@
                 </div>
                 <div class="navbar-icon">
                     <a class="navbar-item" href="https://www.instagram.com/plenodesarrollos/" target="_blank" rel="noopener noreferrer">
-                    <img src="./img/Iconos/-Icono Insta.png" alt="LogoPLeno" width="40" height="40">
+                    <img src="./img/Iconos/-Icono Insta.png" alt="LogoPLeno" width="45" height="42">
                     </a>
                 </div>
                 <div class="navbar-icon">
-                    <a class="navbar-item" href="/">
+                    <a class="navbar-item" href="mailto:comercial@plenodesarrollos.com">
                     <img src="./img/Iconos/-Icono Mail.png" alt="LogoPLeno" width="40" height="40">
                     </a>
                 </div>
@@ -65,15 +65,16 @@
     <div id="carouselExampleDark" class="carousel carousel-dark slide">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="imgCarousel" src="./img/ejemplo carrusel reunión-04.jpg" alt="...">
+                <img class="imgCarousel" src="./img/ejemplo carrusel reunión-04.jpg" class="d. w-100" alt="...">
             </div>
-        <div class="carousel-item">
-            <img src="./img/ejemplo carrusel reunión-04.jpg" class="d. w-100" style="height: 130vh" alt="...">
-        </div>
             <div class="carousel-item">
-                <img src="./img/ejemplo carrusel reunión-04.jpg" class="d. w-100" style="height: 130vh" alt="...">
+                <img class="imgCarousel" src="./img/ejemplo carrusel reunión-04.jpg" class="d. w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img class="imgCarousel" src="./img/ejemplo carrusel reunión-04.jpg" class="d. w-100" alt="...">
             </div>
         </div>
+
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
           <span class="carousel-control-prev-icon"aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -150,8 +151,8 @@
     <!-- SECCION DESARROLLOS  -->
 
     <div id="Desarrollos" class="section_desarrollos">
-        <div style="text-align: left; margin: 30px 20px;">
-            <h1 style="color: #37549c; font-weight: bolder; padding-left: 4%;"> DESARROLLOS </h1>     
+        <div style="text-align: left; margin-top: 20px; margin-bottom: 20px;">
+            <h1 style="color: #37549c; font-weight: bolder; padding-left: 3%;"> DESARROLLOS </h1>     
         </div>
         <div class="desarrollos_grilla">
             <div>
@@ -242,7 +243,7 @@
 
     <div class="break" style="display: flex; justify-content: center; align-items: center;">
 
-        <img src="./img/Breaks/-BREAK 1.png" width="250px" alt="divisor de pantalla">
+        <img src="./img/Breaks/break-02.png" width="90%" alt="divisor de pantalla">
 
     </div>
 
@@ -255,25 +256,25 @@
         <div class="textForm">
                 <div class="iconForm">
                     <img src="./img/Iconos/icons8-correo-50.png" width="40px" height="45px" alt="">
-                    <a class="logForm" href="">
+                    <a class="logForm" href="mailto:comercial@plenodesarrollos.com" target="_blank">
                         comercial@plenodesarrollos.com
                     </a>
                 </div>
                 <div class="iconForm">
                     <img src="./img/Iconos/icons8-whatsapp-50.png" alt="">
-                    <a class="logForm" href="">
+                    <a class="logForm" href="https://api.whatsapp.com/send?phone=549261664613" target="_blank">
                          +54 9 261 6 684613
                     </a>
                 </div>
                 <div class="iconForm">
                     <img src="./img/Iconos/icons8-instagram-50.png"  width="60px" height="60px" alt="">
-                    <a class="logForm" href="">
+                    <a class="logForm" href="https://www.instagram.com/plenodesarrollos/" target="_blank">
                         plenodesarrollos
                     </a>
                 </div>
                 <div class="iconForm">
                     <img src="./img/Iconos/icons8-facebook-50.png" alt="">
-                    <a class="logForm" href="">
+                    <a class="logForm" href="https://www.facebook.com/plenodesarrollos/" target="_blank">
                         plenodesarrollos
                     </a>
                 </div>            
@@ -282,22 +283,22 @@
             <fieldset class="field">
 
                 <div class="row mb-3">
-                    <label for="inputNombre" class="col-sm-2 col-form-label" style="font-family: 'Univers';">NOMBRE Y APELLIDO</label>
-                    <div class="col-sm-10">
+                    <label for="inputNombre" class="col-sm-3 col-form-label" style="font-family: 'Univers';">NOMBRE Y APELLIDO</label>
+                    <div class="col-sm-9">
                         <input type="nombre" class="form-control foco" id="inputNombre">
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <label for="email" class="col-sm-2 col-form-label" style="font-family: 'Univers';">EMAIL
+                    <label for="email" class="col-sm-3 col-form-label" style="font-family: 'Univers';">EMAIL
                     </label>
-                    <div class="col-sm-10">
+                    <div class="col-sm-9">
                         <input type="email" class="form-control foco"  id="email">
                     </div>
                 </div>
                
                 <div class="row mb-3">
-                    <label for="inputAsunto" class="col-sm-2 col-form-label" style="font-family: 'Univers';">TELEFONO</label>
-                    <div class="col-sm-10">
+                    <label for="inputAsunto" class="col-sm-3 col-form-label" style="font-family: 'Univers';">TELEFONO</label>
+                    <div class="col-sm-9">
                     <input type="password" class="form-control foco" id="inputAsunto">
                     </div>
                 </div>
@@ -309,8 +310,8 @@
             </fieldset>    
             <fieldset class="row mb-3">
                 <div class=" botones d-flex">
-                    <button type="submit" class="btn btn-dark">Enviar</button>
-                    <button type="reset" class="btn btn-dark">Borrar</button>
+                    <button type="submit" style="background-color:rgb(35, 48, 96); color: aliceblue;" class="btn">Enviar</button>
+                    <button type="reset" style="background-color:rgb(35, 48, 96); color: aliceblue;" class="btn">Borrar</button>
                 </div>  
             </fieldset>
         </form>

@@ -1,6 +1,7 @@
 
 
-body{
+body, html{
+    height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -53,7 +54,7 @@ p{
     display: flex;
     position: fixed;
     bottom: 30px;
-    right: 30px; 
+    right: 20px; 
     border-radius: 35px;
     background-color: rgba(10, 204, 10, 1);
     
@@ -85,6 +86,7 @@ p{
     align-items: center;
     background-color: rgb(35, 48, 96);
     height: 250px;
+    margin-top: 150px;
 }
 
 /* FORMULARIO*/
@@ -97,6 +99,8 @@ p{
     align-items: center;
     gap: 10px;
     font-family: 'Univers';
+    margin: 0px 20px;
+    padding-right: 40px;
 }
 
 .textForm{
@@ -134,10 +138,12 @@ p{
     padding-left: 2%;
     font-family: 'Univers';
 }
+
 .btn{
     width: 120px;
     margin: 1%;
     font-family: 'Univers';
+    background-color:rgb(35, 48, 96);
 }
 
 
@@ -150,10 +156,15 @@ p{
 
 
 .navbar{
-    height: 120px;
+    height: 110px;
     display: grid;
-    grid-template-columns: 3fr 5fr 3fr;
+    grid-template-columns: 3fr 3fr 3fr;
     grid-template-rows: 1.5fr;
+}
+
+.collapse{
+    text-align: center;
+    justify-content: flex-end;
 }
 
 li{
@@ -163,30 +174,28 @@ li{
     line-height: 35px;
 }
 
-
 .naveg-socialMedia{
     height: 100%;
-    width: 150px;
+    width: 200px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
 
-/* CONTENIDO PRINCIPAL*/
+/* CONTENIDO PRINCIPAL */
 
-.carousel{
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-.imgCarousel{
-    width: 100%;
+.carousel {
+    height: 120vh;
+    margin: 0px 20px;
+  }
+  .carousel-inner, .carousel-inner > .carousel-item, .carousel-inner > .carousel-item > img {
+    width: 100vw;
     height: 100%;
-    display: flex;
     justify-content: center;
     background-size: cover;
     background-position: center center;
-}
+  }
 
 /* CONTENIDO LOGROS*/
 
@@ -196,8 +205,8 @@ li{
     grid-template-columns: 1fr 1fr 1fr;
     background-color: rgb(231 239 244);
     justify-items: center;
-    margin: 30px 20px;
-    padding-left: 4%;
+    margin: 10px 20px;
+    padding-left: 3%;
     padding-right: 4%;
 }
 
@@ -216,7 +225,7 @@ li{
 
 .section_nuesVirt{
     height: 400px;
-    margin: 30px 20px;
+    margin: 10px 20px;
     background-color: aliceblue;
     display: flex;
     flex-direction: row;
@@ -227,8 +236,8 @@ li{
 .nuestras_virtudes{
     background-color: #37549c;
     width: 60%;
-    padding-right: 6%;
-    padding-left: 4%;
+    padding-right: 5%;
+    padding-left: 3%;
     h3{
         color: azure;
         font-size: 45px;
@@ -264,9 +273,8 @@ li{
     font-size: 40px;
     font-family:'Univers';
     font-weight: bold;
-    margin-top: 2%;
-    margin-left: 20px;
-    padding-left: 4%;
+    margin: 20px;
+    padding-left: 3%;
     align-self: self-start;
     color:rgb(67, 80, 126);
 }
@@ -274,12 +282,10 @@ li{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 10px;
-    height: 250px;
-    padding-left: 4%;
+    height: 300px;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 5%;
+    margin: 20px;
 }
 
 .imgPrev{
@@ -306,8 +312,8 @@ li{
 .desarrollos_grilla{
     height: 100%;
     width: 100%;
-    padding-left: 4%;
-    padding-right: 4%;
+    padding-left: 2%;
+    padding-right: 2%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -324,7 +330,6 @@ li{
     width: 100vw;
     height: 130vh;
     display: flex;
-    justify-content: center;
     background:  url(/img/minisitio/IMAGEN\ PORTADA\ DUO-02.jpg);
     background-size: cover;
     background-position: center center;
@@ -371,11 +376,14 @@ li{
     grid-template-rows: 1fr;
 }
 
+/*
+
 .carousel-item img{
     object-fit: scale-down;
     object-position: center;
     height: 80vh;
     overflow: hidden;
+    margin-bottom: 50px;
 }
 
 /*----------------------------------------------------*/
