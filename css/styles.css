@@ -302,13 +302,6 @@ li{
     width: fit-content;
 }
 
-.card-title{
-    background-color:rgb(35, 48, 96);
-}
-.card-text{
-    color: azure;
-}
-
 .desarrollos_grilla{
     height: 100%;
     width: 100%;
@@ -316,7 +309,7 @@ li{
     padding-right: 2%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 15px;
 }
 
