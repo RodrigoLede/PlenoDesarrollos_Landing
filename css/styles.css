@@ -186,13 +186,13 @@ li{
 /* CONTENIDO PRINCIPAL */
 
 .carousel {
-    height: 120vh;
+    height: 100vh;
     margin: 0px 20px;
+    padding-top: 3%;
   }
   .carousel-inner, .carousel-inner > .carousel-item, .carousel-inner > .carousel-item > img {
-    width: 100vw;
+    width: 100%;
     height: 100%;
-    justify-content: center;
     background-size: cover;
     background-position: center center;
   }
@@ -205,7 +205,7 @@ li{
     grid-template-columns: 1fr 1fr 1fr;
     background-color: rgb(231 239 244);
     justify-items: center;
-    margin: 10px 20px;
+    margin: 0px 20px;
     padding-left: 3%;
     padding-right: 4%;
 }
@@ -224,31 +224,31 @@ li{
 /* NOSOTROS*/
 
 .section_nuesVirt{
-    height: 400px;
-    margin: 10px 20px;
+    height: 450px;
+    margin: 0px 20px;
+    margin-bottom: 50px;
     background-color: aliceblue;
-    display: flex;
-    flex-direction: row;
-    flex-grow: inherit;
-    column-gap: 5px;
     }
 
 .nuestras_virtudes{
-    background-color: #37549c;
-    width: 60%;
-    padding-right: 5%;
-    padding-left: 3%;
+    background-color:  rgb(35, 48, 96);
+    width: 100%;
+    height: 100%;
+    padding: 5% 15%;
+
     h3{
         color: azure;
         font-size: 45px;
         margin-top: 30px;
         margin-left: 20px;
         margin-bottom: 30px;
+        text-align: center;
     }
     .p-Virtudes{
         color: white;
-        text-align: justify;
+        text-align: center;
         font-size: large;
+        font-weight: bold;
         font-family: 'Univers';
         line-height: 2em;
         display: flex;
@@ -273,9 +273,9 @@ li{
     font-size: 40px;
     font-family:'Univers';
     font-weight: bold;
-    margin: 20px;
+    margin: 50px 20px;
     padding-left: 3%;
-    align-self: self-start;
+    text-align: center;
     color:rgb(67, 80, 126);
 }
 .section_prev{
@@ -285,7 +285,7 @@ li{
     height: 300px;
     align-items: center;
     justify-content: space-between;
-    margin: 20px;
+    margin: 50px 20px;
 }
 
 .imgPrev{
@@ -318,45 +318,47 @@ li{
 
 /* EXCLUSIVOS MICRO SITIO*/
 
+.barraMicro{
+    margin-top: 50px;
+    justify-items: end;
+    align-items: flex-start;
+}
 .wrap{
     padding: 0px 100px 100px 100px;
     width: 100vw;
     height: 130vh;
     display: flex;
+    justify-content: flex-end;
     background:  url(/img/minisitio/IMAGEN\ PORTADA\ DUO-02.jpg);
     background-size: cover;
     background-position: center center;
 }
 
-.wrap-text{
-    color: black;
-    height: 700px;
-    width: 50%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 .section{
     display:grid;
-    grid-template-columns: 1fr 1.5fr;
-    padding: 25px 28px;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px 20px;
+    padding: 3% 6%;
     background-color: #f2f1ed;
-    height: 500px;
-    margin-bottom: 25px;
+    height: 650px;
+    
 }
 
 .firstDescription{
     display: grid;
+    height: 500px;
+    row-gap: 50px;
     grid-template-rows: 1fr 3fr;
-    padding: 20px 60px;
+    padding: 5% 7%;
 }
 
-
 .imgContainer{
-    height: 490px;
+    height: 500px;
+    width: 500px;
+    align-self: center;
+    justify-self: center;
 }
 .hallEntrada{
     width: 100%;
@@ -367,16 +369,66 @@ li{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    margin: 10px 20px;
+    background-color: #f2f1ed;
+}
+.mapa{
+    padding: 5% 5% 5% 18%;
 }
 
-/*
-
-.carousel-item img{
-    object-fit: scale-down;
-    object-position: center;
-    height: 80vh;
-    overflow: hidden;
-    margin-bottom: 50px;
+.textMapa{
+    display: grid;
+    height: 500px;
+    row-gap: 10px;
+    grid-template-rows: 0.5fr 1fr 3fr;
+    padding: 5% 20% 3% 7%;
 }
+
+
+.mapsList{
+    display: flex;
+    align-items: center;
+    
+}
+
+.section2{
+    display:grid;
+    grid-template-columns: 1.3fr 2fr;
+    margin: 10px 20px;
+    padding: 3% 6%;
+    background-color: #f2f1ed;
+    height: 550px;
+}
+
+.firstDescription2{
+    display: grid;
+    height: 500px;
+    row-gap: 10px;
+    grid-template-rows: 0.5fr 0.8fr 0.5fr 3fr;
+    padding: 5% 7%;
+    background-color:#d0d0ce;
+}
+
+
+
+.mainSection{
+    margin: 10px 20px;
+    padding: 0% 6%;
+}
+
+.sectionImages{
+    display: grid;
+    margin: 5px 20px;
+    padding: 0% 6%;
+    grid-template-columns: 1.3fr 2fr;
+}
+
+.image{
+    height: 500px;
+}
+
+
+
+
 
 /*----------------------------------------------------*/
