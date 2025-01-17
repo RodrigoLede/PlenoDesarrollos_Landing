@@ -1,10 +1,12 @@
 
 
 body, html{
-    height: 100%;
+    height: fit-content;
+   
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 
 }
 
@@ -44,7 +46,7 @@ p{
     font-family:'Univers';
     text-align:justify;
     font-size: x-large;
-    line-height: 3.5ch;
+    line-height: 3ch;
     margin: 0px;
 }
 
@@ -172,6 +174,7 @@ li{
     font-size: larger;
     list-style: none;
     line-height: 35px;
+    font-weight: bold;
 }
 
 .naveg-socialMedia{
@@ -189,13 +192,13 @@ li{
     height: 100vh;
     margin: 0px 20px;
     padding-top: 3%;
-  }
-  .carousel-inner, .carousel-inner > .carousel-item, .carousel-inner > .carousel-item > img {
+}
+.carousel-inner, .carousel-inner > .carousel-item, .carousel-inner > .carousel-item > img {
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center center;
-  }
+}
 
 /* CONTENIDO LOGROS*/
 
@@ -341,9 +344,8 @@ li{
     grid-template-columns: 1fr 1fr;
     margin: 10px 20px;
     padding: 3% 6%;
-    background-color: #f2f1ed;
+    background-color: white;
     height: 650px;
-    
 }
 
 .firstDescription{
@@ -387,16 +389,16 @@ li{
 
 .mapsList{
     display: flex;
-    align-items: center;
-    
+    align-items: flex-start;
+    margin-top: 35px;
 }
 
 .section2{
     display:grid;
-    grid-template-columns: 1.3fr 2fr;
+    grid-template-columns: 1fr 1fr;
     margin: 10px 20px;
     padding: 3% 6%;
-    background-color: #f2f1ed;
+    background-color: #d0d0ce;
     height: 550px;
 }
 
@@ -409,11 +411,15 @@ li{
     background-color:#d0d0ce;
 }
 
+.imgContainer2{
+    padding: 5% 0%; 
+}
+
 
 
 .mainSection{
     margin: 10px 20px;
-    padding: 0% 6%;
+   
 }
 
 .sectionImages{
@@ -432,3 +438,21 @@ li{
 
 
 /*----------------------------------------------------*/
+
+/* MOBILE ADJUSTMENT */
+
+@media screen and (max-width: 690px) {
+
+    
+.navbar{
+    height: 64px;
+    
+}
+    
+    .carousel {
+        height: 50vh;
+        margin: 0px 20px;
+        padding-top: 3%;
+    }
+}
+
