@@ -156,12 +156,21 @@ p{
 
 /* HEADER*/
 
-
 .navbar{
     height: 110px;
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
     grid-template-rows: 1.5fr;
+}
+
+.naveg-brand{
+    width: 350px;
+    padding-left: 2%;
+}
+
+.navbar-logo{
+    height: 80px;
+    width: 250px;
 }
 
 .collapse{
@@ -184,6 +193,16 @@ li{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.navbar-icon-media{
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-icon-ig{
+    width: 45px;
+    height: 42px;
 }
 
 /* CONTENIDO PRINCIPAL */
@@ -445,14 +464,60 @@ li{
 
     
 .navbar{
-    height: 64px;
-    
+    height: 750px;
+    display: flex;
 }
-    
-    .carousel {
-        height: 50vh;
-        margin: 0px 20px;
-        padding-top: 3%;
-    }
+
+.navbar-collapse {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgb(231, 239, 244);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
 }
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-item {
+    margin: 10px 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Toggle button */
+.navbar-toggler {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Social media icons */
+.naveg-socialMedia {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Show menu when active */
+.navbar-active .navbar-collapse {
+    display: flex;
+}
+
 
