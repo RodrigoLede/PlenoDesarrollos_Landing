@@ -205,7 +205,7 @@ li{
     height: 42px;
 }
 
-/* CONTENIDO PRINCIPAL */
+/* CONTENIDO PRINCIPAL*/
 
 .carousel {
     height: 100vh;
@@ -218,6 +218,7 @@ li{
     background-size: cover;
     background-position: center center;
 }
+
 
 /* CONTENIDO LOGROS*/
 
@@ -302,7 +303,7 @@ li{
 }
 .section_prev{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     height: 300px;
     align-items: center;
@@ -462,62 +463,5 @@ li{
 
 @media screen and (max-width: 690px) {
 
-    
-.navbar{
-    height: 750px;
-    display: flex;
 }
-
-.navbar-collapse {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: rgb(231, 239, 244);
-    position: absolute;
-    top: 60px;
-    left: 0;
-    padding: 10px 0;
-}
-
-.navbar-nav {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-.nav-item {
-    margin: 10px 0;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-}
-
-/* Toggle button */
-.navbar-toggler {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-/* Social media icons */
-.naveg-socialMedia {
-    display: flex;
-    gap: 10px;
-}
-
-.navbar-icon img {
-    width: 30px;
-    height: 30px;
-}
-
-/* Show menu when active */
-.navbar-active .navbar-collapse {
-    display: flex;
-}
-
 
