@@ -401,13 +401,31 @@ li{
     margin: 30px 20px;
 }
 
+.image-container {
+    display: inline-block; /* Keeps it inline */
+    overflow: hidden; /* Prevents the image from exceeding the div */
+    border-radius: 10px; /* Optional, for rounded corners */
+}
+
 .imgPrev{
     width: 95%;
-    background-color: aqua;
+    background-color: #f0f0f0;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     border-radius: 10%;
-
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
 }
+
+.image-container:hover img {
+    transform: scale(1.1); /* Makes the image "pop out" */
+}
+
+
+
+
+
 
 @media (max-width: 480px) { 
     .proyectsContainer_title{
