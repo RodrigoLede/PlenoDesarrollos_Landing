@@ -10,6 +10,32 @@ body, html{
 
 }
 
+/* SITIO EN CONSTRUCCION */
+
+.cuerpo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 30px;
+    height: 100vh;
+}
+.showcase {
+    position: relative;
+}
+
+.bg-image{
+    opacity: 0.4;
+  }
+
+.bg-img-title {
+    font-size:4rem;
+    font-family: fantasy;
+    font-weight: 800;
+    position: absolute;
+    left: 15%;
+    color: rgb(35, 48, 96); 
+}
+
 /* COMUNES A TODO */
 
 /* FUENTES Y TEXTOS*/
