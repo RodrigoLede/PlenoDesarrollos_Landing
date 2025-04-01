@@ -6,13 +6,19 @@
     <title>PlenoDesarrollos-LandingPage</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-
 </head>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const navbarHeight = document.querySelector(".navbar").offsetHeight;
+        document.querySelector(".main-content").style.marginTop = navbarHeight + "px";
+    });
+    </script>
+
 <body>
 
     <!-- BARRA DE NAVEGACIÓN -->
-    <div class="header">
+    <header class="main-content">
     
         <nav class="navbar navbar-expand-lg fixed-top" style="background-color: rgb(231 239 244);">
             <div class="container-fluid">
@@ -33,7 +39,7 @@
                         <li class="nav-item"><a class="nav-link" href="#Contactos">CONTACTO</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="collapse navbar-collapse d-none d-lg-block" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#Nosotros">PLENO</a></li>
@@ -63,8 +69,6 @@
             </div>
         </nav>
         
-        
-        
         <script>
             document.getElementById('menuToggle').addEventListener('click', function () {
                 document.getElementById('sidebar').classList.add('active');
@@ -74,7 +78,7 @@
             });
         </script>
         
-    </div>
+    </header>
     
 
     <!-- FOTOS PRINCIPALES EN CARRUSEL -->
@@ -140,7 +144,7 @@
     <div id="Nosotros" class="section_nuesVirt">
         <div class="nuestras_virtudes">
 
-            <h3>
+            <h3 class="tituloVirtudes">
                 CREAMOS ENTORNOS QUE INSPIRAN Y PERDURAN.
             </h3>
 
@@ -156,24 +160,39 @@
     </div>
 
     <!-- SECCION PREVENTAS -->
-    <div id="Preventa" >
+    <div id="Preventa">
         <p class="proyectsContainer_title">PREVENTA</p>
     </div>
 
     <div class="section_prev">
-        <div class="image-container"><img class="imgPrev" src="./img/ImgPreventa/PREVENTA-01.png" alt="Hover Image"></div>
-        <div class="image-container"><img class="imgPrev" src="./img/ImgPreventa/PREVENTA-02.png" alt=""></div>
-        <div class="image-container"><img class="imgPrev" src="./img/ImgPreventa/PREVENTA-03-03.png" alt=""></div>
-        <div class="image-container"><img class="imgPrev" src="./img/ImgPreventa/PREVENTA-04.png" alt=""></div>
+        <a href="./pages/Proximamente.html" target="_self">
+            <div class="image-container"><img class="imgPrev" src="./img/ImgPreventa/PREVENTA-01.jpg" alt="Hover Image"></div>
+        </a>
+
+        <a href="./pages/MicroSite.html" target="_self">
+            <div class="image-container"><img class="imgPrev" src="./img/ImgPreventa/PREVENTA-02.jpg" alt=""></div>
+        </a>
+
+        <a href="./pages/Proximamente.html" target="_self">
+            <div class="image-container"><img class="imgPrev" src="./img/ImgPreventa/PREVENTA-03.jpg" alt=""></div>
+        </a>
+
+        <a href="./pages/Proximamente.html" target="_self">
+            <div class="image-container"><img class="imgPrev" src="./img/ImgPreventa/PREVENTA-04.jpg" alt=""></div>
+        </a>
+
+        <a href="./pages/Proximamente.html" target="_self">
+            <div class="image-container"><img class="imgPrev" src="./img/ImgPreventa/PREVENTA-05.jpg" alt=""></div>
+        </a>
     </div>
 
     <!-- SECCION DESARROLLOS  -->
 
-    <div id="Desarrollos" class="section_desarrollos">
-        <div style="text-align: center; margin: 50px 20px;">
-            <h1 style="color: rgb(67, 80, 126); font-weight: bolder; padding-left: 3%;"> DESARROLLOS </h1>     
-        </div>
-        <div class="desarrollos_grilla">
+    <div id="Desarrollos">
+        <p class="tituloDesarrollos">DESARROLLOS</p>
+    </div>
+
+    <div class="desarrollos_grilla">
             <div>
                 <div class="card">
                     <img src="./img/Grilla Edificios/2.jpg" class="card-img-top" alt="...">
@@ -281,7 +300,6 @@
                     <img src="./img/Grilla Edificios/18.jpg" class="card-img-top" alt="...">
                 </div>
             </div>
-        </div>
     </div>
 
     <!-- Breaks de seccion -->
@@ -386,6 +404,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>
-    
+
 </body>
 </html>
